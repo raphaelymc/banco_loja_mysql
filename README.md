@@ -95,10 +95,10 @@ Este projeto é indicado para:
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autora
 
 Desenvolvido por **Raphaely Magalhaes**
 
 ---
 
-⭐ Se este projeto te ajudou, não esqueça de deixar uma estrela no repositó ❤️
+⭐ Se este projeto te ajudou, não esqueça de deixar uma estrela no repositório. ❤️
