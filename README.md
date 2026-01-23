@@ -97,7 +97,7 @@ Este projeto é indicado para:
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **[Raphaely Magalhaes]**
+Desenvolvido por **Raphaely Magalhaes**
 
 ---
 
