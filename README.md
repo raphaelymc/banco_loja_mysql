@@ -2,14 +2,13 @@
 
 Este repositório contém o projeto de modelagem e implementação de um banco de dados relacional para controle de clientes, municípios e gestão financeira de faturas (Contas a Receber).
 
-## 📊 Modelo de Entidade-Relacionamento (EER)
+## Modelo de Entidade-Relacionamento (EER)
 
 Abaixo está a representação visual da estrutura do banco de dados:
 
 ![Diagrama do Banco de Dados](./diagrama_eer.png) 
-*(Nota: Se você deu outro nome ao arquivo da imagem, troque o 'diagrama.png' acima pelo nome exato do seu arquivo)*
 
----
+
 
 ## Estrutura das Tabelas
 
