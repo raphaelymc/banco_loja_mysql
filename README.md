@@ -1,7 +1,7 @@
 Sistema de Gestão de Loja e Contas a Receber
 Este repositório contém o projeto de modelagem e implementação de um banco de dados relacional (MySQL) para o gerenciamento de clientes e faturas financeiras de uma loja.
 
- Diagrama de Entidade-Relacionamento (EER)
+📊 Diagrama de Entidade-Relacionamento (EER)
 Abaixo apresento a estrutura visual das tabelas e seus relacionamentos:
 
 📋 Estrutura do Banco de Dados
@@ -22,4 +22,6 @@ Status Dinâmicos: Controle de situação da fatura através de tipos ENUM.
 
 🔍 Exemplo de Consulta (Relatório de Cobrança)
 O sistema permite extrair relatórios financeiros imediatos. Para visualizar clientes com pagamentos pendentes, basta executar:
+
+SQL
 SELECT * FROM ContasNaoPagas;
