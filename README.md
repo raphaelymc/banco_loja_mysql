@@ -1,34 +1,25 @@
-# Sistema de Gestão de Loja e Contas a Receber (MySQL)
+Sistema de Gestão de Loja e Contas a Receber
+Este repositório contém o projeto de modelagem e implementação de um banco de dados relacional (MySQL) para o gerenciamento de clientes e faturas financeiras de uma loja.
 
-Este repositório contém o projeto de modelagem e implementação de um banco de dados relacional para controle de clientes, municípios e gestão financeira de faturas (Contas a Receber).
+ Diagrama de Entidade-Relacionamento (EER)
+Abaixo apresento a estrutura visual das tabelas e seus relacionamentos:
 
-## Modelo de Entidade-Relacionamento (EER)
+📋 Estrutura do Banco de Dados
+O banco de dados foi projetado seguindo as normas de integridade referencial:
 
-Abaixo está a representação visual da estrutura do banco de dados:
+Estado & Município: Normalização de endereços para garantir a consistência geográfica.
 
-![Diagrama do Banco de Dados](./diagrama_eer.png) 
+Cliente: Cadastro completo de informações pessoais (CPF, Celular) vinculado à tabela de municípios.
 
+ContaReceber: Tabela central de controle financeiro, registrando faturas, vencimentos e o status de pagamento (Situacao).
 
+⚙️ Funcionalidades Técnicas
+Views Otimizadas: Implementação da View ContasNaoPagas para agilizar a identificação de clientes inadimplentes.
 
-## Estrutura das Tabelas
+Segurança de Dados: Uso de chaves primárias e estrangeiras para evitar registros órfãos.
 
-O projeto foi construído focando na integridade referencial e normalização:
+Status Dinâmicos: Controle de situação da fatura através de tipos ENUM.
 
-1.  **Estado & Municipio**: Tabelas para padronização de endereços, evitando duplicidade de dados.
-2.  **Cliente**: Armazena informações cadastrais (CPF, Celular) e está vinculado obrigatoriamente a um município.
-3.  **ContaReceber**: Controla as faturas de vendas, incluindo data de emissão, vencimento, valor e situação do pagamento.
-
-## Tecnologias e Conceitos Aplicados
-
-* **MySQL**: Banco de dados utilizado.
-* **DDL (Data Definition Language)**: Criação de tabelas com chaves primárias (`AUTO_INCREMENT`) e estrangeiras (`FOREIGN KEY`).
-* **DML (Data Manipulation Language)**: Inserção de dados de teste com `INSERT IGNORE`.
-* **Views**: Implementação de visualizações otimizadas para o setor financeiro.
-
-## 🔍 Exemplos de Uso
-
-Uma das funcionalidades principais é a View **`ContasNaoPagas`**, que permite ao setor de cobrança identificar rapidamente clientes inadimplentes:
-
-```sql
--- Executar para ver clientes com contas pendentes (Situacao = '1')
+🔍 Exemplo de Consulta (Relatório de Cobrança)
+O sistema permite extrair relatórios financeiros imediatos. Para visualizar clientes com pagamentos pendentes, basta executar:
 SELECT * FROM ContasNaoPagas;
