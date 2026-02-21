@@ -84,14 +84,13 @@ Essa view facilita consultas e relatórios de cobrança.
 
 ---
 
-##  Finalidade do Projeto
+Este projeto foi desenvolvido como prática acadêmica com foco em modelagem relacional e boas práticas em SQL.
 
-Este projeto é indicado para:
+É indicado para:
 
-* Estudos de **modelagem de banco de dados**
-* Prática de **SQL relacional**
-* Trabalhos acadêmicos
-* Este projeto foi desenvolvido como prática acadêmica com foco em modelagem relacional e boas práticas em SQL.
+- Estudos de modelagem de banco de dados
+- Prática de SQL relacional
+- Trabalhos acadêmicos
   
 
 ---
