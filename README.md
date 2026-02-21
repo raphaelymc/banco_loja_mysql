@@ -91,7 +91,19 @@ Este projeto é indicado para:
 * Estudos de **modelagem de banco de dados**
 * Prática de **SQL relacional**
 * Trabalhos acadêmicos
-* Portfólio no GitHub
+* Este projeto foi desenvolvido como prática acadêmica com foco em modelagem relacional e boas práticas em SQL.
+  
+
+---
+
+##  Conceitos Aplicados
+
+- Modelagem entidade-relacionamento (EER)
+- Normalização básica de dados
+- Integridade referencial com chaves estrangeiras
+- Uso de VIEW para otimização de consultas
+- Consultas SQL (DDL e DML)
+
 
 ---
 
@@ -101,4 +113,4 @@ Desenvolvido por **Raphaely Magalhaes**
 
 ---
 
-⭐ Se este projeto te ajudou, não esqueça de deixar uma estrela no repositório. ❤️
+
